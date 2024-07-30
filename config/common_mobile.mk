@@ -7,10 +7,14 @@ include vendor/lineage/config/aosp_audio.mk
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
-# Default notification/alarm sounds
+# Include Nokia audio files
+include vendor/lineage/config/nokia_audio.mk
+
+# Default notification/alarm sounds/ringtone
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
+    ro.config.ringtone=NokiaTune.mp3 \
+    ro.config.notification_sound=Nokia_Message_01.ogg \
+    ro.config.alarm_alert=Nokia_Alarm_Clock.ogg
 
 # Apps
 PRODUCT_PACKAGES += \
