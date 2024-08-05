@@ -82,6 +82,12 @@ PRODUCT_PACKAGES += \
     LineageNavigationBarNoHint \
     NavigationBarMode2ButtonOverlay
 
+# Dexpreopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI \
+    NexusLauncherRelease
+
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
