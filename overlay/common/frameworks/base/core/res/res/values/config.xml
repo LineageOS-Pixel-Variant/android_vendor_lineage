@@ -430,6 +430,7 @@
          handle wallpaper cropping.
     -->
     <string name="config_wallpaperCropperPackage" translatable="false">com.android.wallpaper</string>
+    <string name="default_wallpaper_component">com.breel.wallpapers20a/com.breel.wallpapers20a.gradient.wallpaper.GradientWallpaper</string>
 
     <!-- Control the behavior when the user long presses the power button.
             0 - Nothing
@@ -459,7 +460,7 @@
              1 - MODE_NIGHT_NO
              2 - MODE_NIGHT_YES
     -->
-    <integer name="config_defaultNightMode">2</integer>
+    <integer name="config_defaultNightMode">1</integer>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->

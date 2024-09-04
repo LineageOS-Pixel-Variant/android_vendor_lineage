@@ -3,13 +3,15 @@ $(call inherit-product, vendor/lineage/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
+# Inherit GMS
+$(call inherit-product, vendor/partner-gms/setup.mk)
+
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 
 # Apps
 PRODUCT_PACKAGES += \
-    Eleven \
     Etar \
     Profiles \
     Recorder \
